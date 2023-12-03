@@ -5,9 +5,9 @@ metadata:
   name: nginx-argocd-svc	  
     labels:	
     app: nginx-argocd
-spec:	spec:
+spec:
   type: NodePort
-  ports:	  ports:
+  ports:
     - port: 80
   selector:	
     app: nginx-argocd	

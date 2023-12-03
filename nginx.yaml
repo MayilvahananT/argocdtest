@@ -3,13 +3,13 @@ apiVersion: v1	apiVersion: v1
 kind: Service	kind: Service
 metadata:	metadata:
   namespace: default
-  name: nginx-argocd-svc	  name: nginxsvc
-  labels:	  labels:
-    app: nginx-argocd	    app: nginx-argocd
+  name: nginx-argocd-svc	  
+    labels:	  labels:
+    app: nginx-argocd
 spec:	spec:
-  type: NodePort	  type: NodePort
+  type: NodePort
   ports:	  ports:
-    - port: 80	    - port: 80
+    - port: 80
   selector:	
     app: nginx-argocd	
 ---

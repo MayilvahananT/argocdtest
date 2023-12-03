@@ -2,12 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-argocd-svc
+  labels:
+    app: nginx-argocd
 spec:
   type: NodePort
   ports:
     - port: 80
   selector:
-    app: nginxinargocd
+    app: nginx-argocd
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -17,11 +19,11 @@ spec:
   replicas: 4
   selector:
     matchLabels:
-      app: nginxinargocd
+      app: nginx-argocd
   template:
     metadata:
       labels:
-        app: nginxinargocd
+        app: nginx-argocd
     spec:
       containers:
         - name: nginx-container

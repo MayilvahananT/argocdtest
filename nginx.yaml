@@ -1,10 +1,9 @@
-
-apiVersion: v1	apiVersion: v1
+apiVersion: v1
 kind: Service
 metadata:	
   namespace: default
   name: nginx-argocd-svc	  
-    labels:	  labels:
+    labels:	
     app: nginx-argocd
 spec:	spec:
   type: NodePort

@@ -10,7 +10,7 @@ spec:
   ports:
     - port: 80
   selector:	
-    app: nginx-argocd
+    app: nginx-argocd1
 ---
 apiVersion: apps/v1
 kind: Deployment

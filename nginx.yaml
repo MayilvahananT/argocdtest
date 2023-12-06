@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
         - name: nginx-container
-          image: nginx:alpine
+          image: quay.io/centos7/nginx-120-centos7
           ports:
             - containerPort: 80

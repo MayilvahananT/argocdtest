@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
         - name: nginx-container
-          image: quay.io/centos7/nginx-120-centos7
+          image: quay.io/jitesoft/nginx
           ports:
             - containerPort: 80
